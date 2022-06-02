@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- บวรดล แนวเงินดี -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+  <style>
+    .jumbotron {
+      position: relative;
+      overflow: hidden;
+      font-family: 'Mitr';
+    }
+
+    video {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .container {
+      z-index: 2;
+      position: relative;
+
+    }
+
+    .form-group {
+      font-family: Mitr;
+    }
+  </style>
+  <script>
+    let l_id = []
+    let l_name = []
+    let l_phone = []
+  </script>
+  <title>32-js-bootstrap-get-student.html</title>
+</head>
+
+<body
+  style="background-image:url(https://png.pngtree.com/thumb_back/fh260/background/20201021/pngtree-abstract-technology-background-design-template-image_428481.jpg);"
+  onload="get_array_data()">
+  <div class="jumbotron jumbotron-fluid mb-0 text-white">
+    <video
+      src="https://cdn.videvo.net/videvo_files/video/premium/video0257/large_watermarked/2500_03254_preview.mp4"
+      autoplay loop muted></video>
+    <div class="container">
+      <h1 class="display-5">Borvorndol Nawngoendee</h1>
+      <p class="lead h2">&nbsp;&nbsp;Information Technology</p>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #4d799b;font-family: Niramit;">
+    <a class="navbar-brand" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cpu"
+        viewBox="0 0 16 16">
+        <path
+          d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+      </svg>
+      Thirdza</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="31-js-bootstrap-set-student.html">PAGE31</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="32-js-bootstrap-get-student.html">PAGE32</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+        <!-- <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> -->
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <div class="card" style="width: 20rem;">
+        <img
+          src="data:image/jpeg;base64,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"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center" style="font-family: Mitr;">แสดงข้อมูลนักเรียน</h5>
+          <p class="card-text" style="font-family: Mitr;">
+          <table class="table table-bordered table-striped table-hover table-danger">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Phone</th>
+              </tr>
+            </thead>
+            <tbody id="output">
+              <script>
+                let show_data = ''
+                function get_array_data() {
+                  l_id = JSON.parse(localStorage.getItem('id'))
+                  l_name = JSON.parse(localStorage.getItem('name'))
+                  l_phone = JSON.parse(localStorage.getItem('phone'))
+                  for (let i = 0; i < l_id.length; i++) {
+                    show_data +='<tr><th scope="row">'+i+'</th><td>'+l_id[i]+'</td><td>'+l_name[i]+'</td><td>'+l_phone[i]+'</td></tr>'
+                    //show_data += l_id[i] + '  ' + l_name[i] + ' ' + l_phone[i] + ' <br> '
+                    document.getElementById('output').innerHTML = show_data
+                    //document.getElementById('output').innerHTML = '<tr><th scope="row">1</th><td>Jacob</td><td>Thornton</td><td>@fat</td></tr>'
+                  } show_data = ''
+                }     
+              </script>
+              </p>
+            </tbody>
+          </table>
+          <!-- <button type="button" class="btn btn-primary w-25" onclick="set_data()">บันทึก</button>
+                      <button type="button" class="btn btn-danger w-25" onclick="clear_input()">Reset</button> -->
+          </p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="fixed-bottom">
+    <div class="p-1 mb-0 alert alert-danger text-center" style="font-family: 'Mitr';" role="alert">
+      Borvorndol Nawngoendee
+    </div>
+    <div class="p-1 mb-0 bg-danger text-dark text-center" style="font-family: 'Mitr';">Information Technology </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
